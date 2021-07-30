@@ -1,6 +1,6 @@
 {
   "name": "@rbxts/datastructures",
-  "version": "1.0.3",
+  "version": "1.0.7",
   "description": "Typings for HowManySmall's datastructures",
   "main": "out/init.lua",
   "scripts": {
