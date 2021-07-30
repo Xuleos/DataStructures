@@ -1,7 +1,7 @@
 {
   "name": "@rbxts/datastructures",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.2",
+  "description": "Typings for HowManySmall's datastructures",
   "main": "out/init.lua",
   "scripts": {
     "build": "rbxtsc",
@@ -15,6 +15,10 @@
   "files": [
     "out"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xuleos/DataStructures.git"
+  },
   "publishConfig": {
     "access": "public"
   },
