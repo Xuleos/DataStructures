@@ -1,5 +1,13 @@
 interface CircularBuffer<T> {
 	/**
+	 * The data of the Circular Buffer
+	 */
+	readonly Data: Array<T>;
+	/**
+	 * The capacity of the CircularBuffer
+	 */
+	readonly Capacity: number;
+	/**
 	 * CLears the CircularBuffer.
 	 * @returns self
 	 */
