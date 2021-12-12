@@ -32,29 +32,29 @@ interface CircularBuffer<T> {
 	IsFull(): boolean;
 	/**
 	 * Pushes the pased data to the front of the CircularBuffer.
-	 * @param newData the data you are pushing
+	 * @param NewData the data you are pushing
 	 * @returns the removed data, if any
 	 */
-	Push(newData: T): T | undefined;
+	Push(NewData: T): T | undefined;
 	/**
 	 * Replaces the index in the CircularBuffer with the passed data. This function errors if there is no index to replace.
-	 * @param index The index you are replacing
-	 * @param newData The data you are replacing with
+	 * @param Index The index you are replacing
+	 * @param NewData The data you are replacing with
 	 * @returns The replaced data
 	 */
-	Replace(index: number, newData: T): T;
+	Replace(Index: number, NewData: T): T;
 	/**
 	 * Inserts the data at the index in the CircularBuffer.
-	 * @param index The index you are replacing.
-	 * @param newData The data you are replacing with.
+	 * @param Index The index you are replacing.
+	 * @param NewData The data you are replacing with.
 	 * @returns The replaced data
 	 */
-	Insert(index: T, newData: T): T | undefined;
+	Insert(Index: T, NewData: T): T | undefined;
 	/**
-	 * @param index The index you are getting. Defaults to `1`
+	 * @param Index The index you are getting. Defaults to `1`
 	 * @returns The value at the given index.
 	 */
-	PeekAt(index: T | undefined): T | undefined;
+	PeekAt(Index: T | undefined): T | undefined;
 	/**
 	 * Returns an iterator for iterating over the CircularBuffer
 	 * @returns the ipairs iterator
@@ -63,7 +63,7 @@ interface CircularBuffer<T> {
 }
 
 interface CircularBufferConstructor {
-	new <T>(maxCapacity: number): CircularBuffer<T>;
+	new <T>(MaxCapacity: number): CircularBuffer<T>;
 }
 
 declare const CircularBuffer: CircularBufferConstructor;
