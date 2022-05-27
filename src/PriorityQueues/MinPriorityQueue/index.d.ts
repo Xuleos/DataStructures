@@ -17,6 +17,10 @@ interface MinPriorityQueue<T> {
 	Contains(Value: T): boolean;
 	RemovePriority(Priority: number): void;
 	RemoveValue(Value: T): void;
+
+	/** @hidden */
+	Heap: Array<HeapEntry<T>>;
+	Length: number;
 }
 
 interface MinPriorityQueueConstructor {
